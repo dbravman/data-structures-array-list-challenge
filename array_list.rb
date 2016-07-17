@@ -12,6 +12,7 @@ class ArrayList
     end
     new_array.set(length, element)
     @array = new_array
+    element
   end
 
   def get(index)

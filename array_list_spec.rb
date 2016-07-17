@@ -6,6 +6,7 @@ describe ArrayList do
     test_array_list.set(0,0)
     test_array_list.set(1,1)
     test_array_list.set(2,2)
+    test_array_list
   end
 
   it "has add" do
