@@ -35,6 +35,7 @@ describe ArrayList do
   end
 
   it "has insert" do
+    expect {array_list.insert(3, "test")}.to raise_error(OutOfBoundsException)
     array_list.insert(1, "test")
     expect(array_list.get(0)).to eq(0)
     expect(array_list.get(1)).to eq("test")
