@@ -7,16 +7,19 @@ class FixedArray
   end
 
   def get(index)
-    raise "OutOfBoundsException" if index >= @array.length
+    raise OutOfBoundsException if index >= @array.length
     @array[index]
   end
 
   def set(index, element)
-    raise "OutOfBoundsException" if index >= @array.length
+    raise OutOfBoundsException if index >= @array.length
     @array[index] = element  
   end
 
   def length
     @array.length
   end
+end
+
+class OutOfBoundsException < StandardError
 end

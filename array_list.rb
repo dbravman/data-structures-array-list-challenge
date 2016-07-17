@@ -15,7 +15,6 @@ class ArrayList
   end
 
   def set(index, element)
-    raise "OutOfBoundsException" if @array.get(index) == nil
     @array.set(index, element)
   end
 
