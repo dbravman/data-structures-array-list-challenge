@@ -16,8 +16,8 @@ describe ArrayList do
 
   it "has set" do
     expect {array_list.set(3, "test")}.to raise_error(OutOfBoundsException)
-    expect(array_list.set(2, "test")).to be("test")
-    expect(array_list.get(2)).to be("test")
+    expect(array_list.set(2, "test")).to eq("test")
+    expect(array_list.get(2)).to eq("test")
   end
 
   it "has length" do
