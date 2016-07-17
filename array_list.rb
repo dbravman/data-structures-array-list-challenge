@@ -6,8 +6,12 @@ class ArrayList
   end
 
   def add(element)
-    @array = FixedArray.new(@array.length+1)
-    @array.set(@array.length-1, element)
+    new_array = FixedArray.new(length+1)
+    for i in 0..length-1
+      new_array.set(i, get(i))
+    end
+    new_array.set(length, element)
+    @array = new_array
   end
 
   def get(index)
@@ -25,7 +29,7 @@ class ArrayList
   def insert(index, element)
     get(index) #check that index is in range
     count = length-1
-    add(@array.get(count))
+    add(get(count))
     until count == index
       set(count,get(count-1))
       count -= 1
