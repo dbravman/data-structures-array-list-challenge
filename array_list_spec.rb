@@ -23,4 +23,7 @@ describe ArrayList do
   it "has length" do
     expect(array_list.length).to eq(3)
   end
+
+  it "has insert" do
+  end
 end

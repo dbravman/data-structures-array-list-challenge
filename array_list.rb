@@ -21,4 +21,15 @@ class ArrayList
   def length
     @array.length
   end
+
+  def insert(index, element)
+    get(index) #check that index is in range
+    count = length-1
+    add(@array.get(count))
+    until count == index
+      set(count,get(count-1))
+      count -= 1
+    end
+    set(index, element)
+  end
 end
