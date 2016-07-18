@@ -1,0 +1,12 @@
+* ArrayList#new(size) 
+ * O(1)
+* ArrayList#add(element) 
+ * O(n)
+* ArrayList#get(index)
+ * O(1) 
+* ArrayList#set(index, element) 
+ * O(1)
+* ArrayList#length 
+ * O(1)
+* ArrayList#insert(index, element) 
+ * O(n)
